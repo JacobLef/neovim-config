@@ -21,7 +21,8 @@ return { --try to fix later down the line with the if statemnts in the keymap se
 					"stylua", -- lua formatter
 					"isort", -- python formatter
 					"black", -- python formatter (having issues)
-          "debugpy", -- python debugger
+          "debugpy",-- python debugger
+          "rustfmt" -- rust formatter
 				},
 			})
 		end,
@@ -34,7 +35,7 @@ return { --try to fix later down the line with the if statemnts in the keymap se
     },
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "pyright", "clangd"},
+				ensure_installed = { "lua_ls", "pyright", "clangd", "rust-analyzer"},
 			})
 		end,
 	},
@@ -156,6 +157,12 @@ return { --try to fix later down the line with the if statemnts in the keymap se
 				capabilities = capabilities,
         filetypes = { "c", "cpp" }
 			})
+
+      lspconfig["rust-analyzer"].setup({
+				capabilities = capabilities,
+        filetypes = { "rs" }
+			})
+
 		end,
 	},
 }
