@@ -13,6 +13,7 @@ return {
 				c = { "clang-format" },
 				cpp = { "clang-format" },
         racket = { "raco" },
+        rust = { "rustfmt" },
 			},
 
 			format_on_Save = {
