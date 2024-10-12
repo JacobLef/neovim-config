@@ -35,7 +35,7 @@ return { --try to fix later down the line with the if statemnts in the keymap se
     },
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "pyright", "clangd", "rust-analyzer"},
+				ensure_installed = { "lua_ls", "pyright", "clangd", "rust_analyzer"},
 			})
 		end,
 	},
