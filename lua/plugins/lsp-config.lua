@@ -158,7 +158,7 @@ return { --try to fix later down the line with the if statemnts in the keymap se
         filetypes = { "c", "cpp" }
 			})
 
-      lspconfig["rust-analyzer"].setup({
+      lspconfig["rust_analyzer"].setup({
 				capabilities = capabilities,
         filetypes = { "rs" }
 			})
