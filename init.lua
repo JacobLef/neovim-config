@@ -18,6 +18,9 @@ require("lazy").setup("plugins")
 --changes the path of python for tesnroflow
 vim.g.python3_host_prog = "/Users/jacoblefkowitz/Projects/Python/venv/lib/python3.12/site-packages/"
 
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
+
 
 
 --none-ls stuff
