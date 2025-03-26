@@ -119,7 +119,7 @@ return { --try to fix later down the line with the if statemnts in the keymap se
 			})
 			--used to enable autocompletion (assign to every lsp server config)
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-      
+
 	--configure python server with plugin
 	lspconfig["pyright"].setup({
 		capabilities = capabilities,
@@ -171,6 +171,8 @@ return { --try to fix later down the line with the if statemnts in the keymap se
 				capabilities = capabilities,
         filetypes = { "rs" }
 			})
+
+
 
 		end,
 	},

@@ -45,7 +45,7 @@ return {
       sources = cmp.config.sources({ -- order of the sources decides the priority of the recommendations
         { name = "nvim-lsp" },
         { name = "luasnip" }, -- snippets
-        { name = "buffer" }, -- text within current buffer
+        -- { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
       }),
     })
